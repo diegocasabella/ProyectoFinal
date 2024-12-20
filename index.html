@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Ejercicio Práctico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <img src="imagenes/logo.png" alt="escudo boca juniors" width="80">
+        </div>
+        <div>
+            <h1>Tienda del Club Atlético Boca Juniors</h1>
+        </div>
+        <div>
+            <img src="imagenes/logo.png" alt="escudo boca juniors" width="80">
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li> <i class="fa-solid fa-house"></i> <a href="">Inicio</a> </li>
+            <li> <i class="fa-solid fa-photo-film"></i> <a href="#galeria">Galería</a> </li>
+            <li> <i class="fa-solid fa-bag-shopping"></i> <a href="#productos">Productos</a> </li>
+            <li> <i class="fa-solid fa-comment-dots"></i> <a href="#reseñas">Reseñas</a> </li>
+            <li> <i class="fa-solid fa-map-location-dot"></i> <a href="#ubicacion">¿En dónde estamos?</a> </li>
+            <li> <i class="fa-solid fa-envelope"></i> <a href="#contacto">Contacto</a> </li>
+            <li> <i class="fa-solid fa-cart-shopping"></i> <a href="#carrito">Carrito de compras</a> </li>
+        </ul>
+    </nav>
+    <section class="contenedorGaleria">
+        <h2>Galería</h2>
+        <div id="galeria">
+
+            <div>
+                <img src="imagenes/bombonera.png" alt="La Bombonera" width="400em" height="300em">
+            </div>
+            <div>
+                <video src="./videos/videoplayback.mp4" controls muted width="400em" height="300em">
+
+                    <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+                </video>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="productos">
+            <h2>Nuestros productos</h2>
+            <div id="contenedorAccesorios" class="accesorios">
+                <!--  <div class="card">
+                    <h2>Billetera</h2>
+                    <img src="imagenes/Billetera.png" alt="">
+                    <a href="">+ info..</a>
+                    <input id="boton-agregar-carrito" type="button" value="Agregar al carrito">
+                </div>
+                <div class="card">
+                    <h2>Portallaves</h2>
+                    <img src="imagenes/Portallaves.png" alt="">
+                    <a href="">+ info..</a>
+                </div>
+                <div class="card">
+                    <h2>Termo</h2>
+                    <img src="imagenes/Termo.png" alt="">
+                    <a href="">+ info..</a>
+                </div>
+                <div class="card">
+                    <h2>Matera</h2>
+                    <img src="imagenes/Matera.png" alt="">
+                    <a href="">+ info..</a>
+                </div> 
+                -->
+            </div>
+        </section>
+        <section id="carrito">
+            <div>
+                <h2>Tu carrito <i class="fa-solid fa-cart-shopping"></i></h2>
+                <ul>
+
+                </ul>
+                <p>Total a pagar: $0</p>
+                <input id="boton-borrar" type="button" value="Borrar">
+                <input id="boton-pagar" type="button" value="Ir a pagar">
+                <p id="mensajeCarrito"></p>
+            </div>
+        </section>
+    </main>
+
+    <section id="reseñas">
+        <h2>Reseñas</h2>
+        <h4>Opiniones de nuestros clientes:</h4>
+        <div class="contenedor-reseñas">
+            <div>
+                <h3>Excelente</h3>
+                <p>"Compré el termo y es de muy buena calidad"</p>
+                <cite>Juan Roman</cite>
+            </div>
+            <div class="reseña">
+                <h3>Bueno</h3>
+                <p>"Buena relación precio y calidad"</p>
+                <cite>Luis Andres</cite>
+            </div>
+            <div class="reseña">
+                <h3>Muy malo</h3>
+                <p>"Compré hace 2 semanas y todavía no me llegaron los productos"</p>
+                <cite>Mirta Perez</cite>
+            </div>
+            <div class="reseña">
+                <h3>Excelente</h3>
+                <p>"Lindos productos para hacer un buen regalo"</p>
+                <cite>Diego Ariel</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario" action="https://formspree.io/f/manywabd" method="post">
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" id=""> <br><br>
+            <label for="">E-mail</label>
+            <input type="email" name="email" id="">
+            <br><br>
+            <label for="">Deja tu mensaje</label>
+            <textarea name="mensaje" id=""></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <button type="reset">Borrar</button>
+        </form>
+    </section>
+    <section id="ubicacion">
+        <h2>¿Dónde estamos?</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4020.2071405952843!2d-58.511287463475895!3d-34.59558052430871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1729019363417!5m2!1ses!2sar"
+            width="450" height="450" style="border:1;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li> <i class="fa-solid fa-house"></i> <a href="">Inicio</a> </li>
+                <li> <i class="fa-solid fa-photo-film"></i> <a href="#galeria">Galería</a> </li>
+                <li> <i class="fa-solid fa-bag-shopping"></i> <a href="#productos">Productos</a> </li>
+                <li> <i class="fa-solid fa-comment-dots"></i> <a href="#reseñas">Reseñas</a> </li>
+                <li> <i class="fa-solid fa-map-location-dot"></i> <a href="#ubicacion">¿En dónde estamos?</a> </li>
+                <li> <i class="fa-solid fa-envelope"></i> <a href="#contacto">Contacto</a> </li>
+                <li> <i class="fa-solid fa-cart-shopping"></i> <a href="#carrito">Carrito de compras</a> </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+                                      

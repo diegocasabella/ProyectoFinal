@@ -1,0 +1,187 @@
+
+body {
+    background-color: rgb(15, 15, 238);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: white;
+    color: rgb(6, 6, 226);
+    display: flex;
+    padding: 1em;
+    justify-content:space-between;
+    
+
+}
+
+
+nav {
+    background-color: rgb(201, 172, 10);
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(6, 6, 226);
+    
+
+}
+
+main section h2 {
+    background-color: rgb(201, 172, 10);
+    color: rgb(6, 6, 226);
+}
+main img{
+    width: 80%;
+    height: 50% ;
+}
+
+.accesorios {
+    padding: 0;
+    text-align: center;
+    background-color: rgb(15, 15, 238);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;  
+    
+  
+}
+
+.accesorios h2 {
+    background-color: white;
+}
+.card {
+    margin: 0.5em;
+    border: solid 2px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);   
+    overflow:auto;
+    border-radius: 5px;
+    
+}
+
+.card a {
+    display: block;
+    text-decoration:none;
+}
+
+#carrito div{
+    background-color: rgb(201, 172, 10);
+    padding: 1px;
+    width: 20em;
+    border-radius: 2px;
+}
+
+.boton-agregar-carrito {
+    border-radius: 5px;
+    background-color: rgb(15, 15, 238);
+    color: white;
+}
+
+#carrito i{
+    color: black;
+}
+
+
+
+#mensajeCarrito{
+    color: rgb(175, 5, 5);
+    
+}
+
+
+
+#carrito input {
+    border-radius: 10px;
+    background-color: rgb(15, 15, 238);
+    color: white;
+}
+
+
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedorGaleria h2 {
+    background-color: rgb(201, 172, 10);
+    color: rgb(6, 6, 226);
+    
+    
+
+}
+#galeria div {
+    margin: 2em;
+}
+
+#contacto h2 {
+    background-color: rgb(201, 172, 10);
+    color: rgb(6, 6, 226);
+    
+}
+.formulario{
+
+    padding: 0.5em;
+    background-image: url(imagenes/boca.png);
+    background-repeat: no-repeat;
+    background-size: 30em 100%;
+    color: white;
+    
+}
+
+#ubicacion h2 {
+    background-color: rgb(201, 172, 10);
+    color: rgb(6, 6, 226);
+    
+    
+}
+
+.contenedor-reseñas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.contenedor-reseñas div {
+    background-color: rgb(177, 162, 162);
+}
+
+#reseñas {
+    text-align: center;
+}
+
+#reseñas h2, h4 {
+    text-align: start;
+    background-color: rgb(201, 172, 10);
+    color: rgb(6, 6, 226);
+   
+ 
+}
+
+#reseñas cite {
+   text-align-last: right;
+}
+
+@media (width < 600px) {
+    .accesorios{
+        grid-template-columns: 1fr;  
+    }
+
+    .contenedor-reseñas{
+        grid-template-columns: 1fr;
+    }
+
+    nav ul, header {
+        flex-direction: column;
+    }
+    
+}
